@@ -1,0 +1,7 @@
+.custom-thumbs-up, .custom-thumbs-down {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+}

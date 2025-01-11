@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tweet Interaction Modifier",
+  "version": "1.0",
+  "description": "Modifies tweet interaction buttons",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
